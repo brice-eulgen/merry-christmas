@@ -62,19 +62,83 @@ body {
 	color: #0097e6;
 }
 
+/* apply on all sections */
+
 section {
 	margin-bottom: 2rem;
 	padding: 3rem 9%;
 }
 
+/* services design */
+
+.services .container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
+	gap: 2rem;
+}
+
+.services .container div {
+	padding: 3rem;
+	text-align: center;
+	line-height: 1.5rem;
+	border-radius: 0.5rem;
+}
+
+.services .container > div:nth-child(even) {
+	background: #0a0a0a;
+}
+
+.services .container i {
+	height: 3rem;
+	width: 3rem;
+	line-height: 3rem;
+	border-radius: 50%;
+	font-size: 1.2rem;
+	background: #0097e6;
+	margin-bottom: 1.5rem;
+	transform: translateY(0);
+	transition: 0.2s ease-in-out transform;
+}
+
+.services .container>div:hover i{
+	transform: translateY(-1.1rem);
+}
+
+.services .container h2 {
+	margin-bottom: 1.5rem;
+	text-transform: capitalize;
+}
+
+/* gallery design */
+
+.gallery .container {
+	column-width: 15rem;
+	column-count: 3;
+	gap: 2rem;
+}
+
+.gallery .container div {
+	overflow: hidden;
+	margin-bottom: 1.5rem;
+	border-radius: 0.5rem;
+	display: flex;
+	align-items: center;
+}
+
+.gallery .container img {
+	width: 100%;
+	height: 100%;
+	transform: scale(1);
+	transition: 0.2s ease-in-out transform;
+}
+
+.gallery .container div:hover img {
+	transform: scale(1.2);
+}
+
 /* contact-us design */
 
 section > form {
-	/* display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	gap: 2rem; */
 	margin: 1rem auto;
 	max-width: 60rem;
 	text-align: center;
@@ -106,19 +170,19 @@ section > form > textarea {
 section > form > input[type="text"]:focus,
 section > form > input[type="email"]:focus,
 section > form > input[type="number"]:focus,
-section > form > textarea:focus{
+section > form > textarea:focus {
 	border-bottom: 0.01rem solid #0097e6;
 }
 
-section>form>input[type="submit"]{
+section > form > input[type="submit"] {
 	padding: 0.7rem 1.5rem;
 	font-size: 1.2rem;
 	border: none;
 	background: #0097e6;
-	transition: 0.2s ease-in-out background-color,0.2s ease-in-out color;
+	transition: 0.2s ease-in-out background-color, 0.2s ease-in-out color;
 }
 
-section>form>input[type="submit"]:hover{
+section > form > input[type="submit"]:hover {
 	background-color: #fff;
 	color: #000;
 	cursor: pointer;
@@ -231,7 +295,7 @@ footer {
 footer .container {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-	gap: 30px;
+	gap: 2rem;
 }
 
 footer .quick-links div > a,
