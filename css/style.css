@@ -69,6 +69,150 @@ section {
 	padding: 3rem 9%;
 }
 
+/* about design */
+
+.about .container {
+	display: grid;
+	height: 37rem;
+	grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
+	gap: 2rem;
+}
+
+.about .container .left-about {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	overflow: hidden;
+}
+
+.about .container .left-about img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.about .container .right-about {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	justify-content: center;
+	gap: 1.7rem;
+	line-height: 2.2rem;
+}
+
+.about .container .right-about h2 {
+	font-size: 1.5rem;
+	color: #0097e6;
+	font-weight: 200;
+}
+
+.about .container .right-about h3 {
+	font-size: 2.1rem;
+	font-weight: 700;
+}
+
+.about .container .right-about p {
+	font-size: 1rem;
+	text-align: justify;
+	color: rgb(255, 255, 255, 0.5);
+	font-weight: 300;
+}
+
+.about .container .right-about a {
+	text-decoration: none;
+	background: #0097e6;
+	padding: 0.5rem 1rem;
+	font-size: 1.2rem;
+}
+
+/* products design */
+
+.products .container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
+	gap: 2rem;
+}
+
+.products .container > div {
+	text-align: center;
+	text-transform: capitalize;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+}
+
+.products .container h2 {
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+.products .container p {
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+
+.products .container .rating > i {
+	color: #0097e6;
+}
+
+.products .container p > span {
+	font-size: 1rem;
+	font-weight: 300;
+	text-decoration: line-through;
+	color: rgb(255, 255, 255, 0.5);
+}
+
+.products .container .product-img {
+	position: relative;
+	overflow: hidden;
+	height: 15rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.products .container .product-img .reference {
+	position: absolute;
+	top: 50%;
+	background: none;
+	transform: translateY(-2rem);
+	opacity: 0;
+	transition: 0.2s ease-in-out transform, 0.2s ease-in-out opacity;
+}
+
+.products .container .product-img:hover .reference {
+	transform: translateY(0rem);
+	opacity: 1;
+}
+
+.products .container .product-img .reference a {
+	font-size: 1.7rem;
+	text-decoration: none;
+	color: #fff;
+	text-align: center;
+	letter-spacing: 1rem;
+	transition: 0.2s ease-in-out color;
+}
+
+.products .container .product-img .reference a:hover {
+	color: #0097e6;
+}
+
+.products .container .product-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transform: scale(0.8);
+	transition: 0.2s ease-in-out transform;
+}
+
+.products .container > div:hover .product-img img {
+	transform: scale(1);
+}
+
 /* services design */
 
 .services .container {
@@ -100,7 +244,7 @@ section {
 	transition: 0.2s ease-in-out transform;
 }
 
-.services .container>div:hover i{
+.services .container > div:hover i {
 	transform: translateY(-1.1rem);
 }
 
@@ -192,7 +336,7 @@ section > form > input[type="submit"]:hover {
 
 .blogs .container {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
 	gap: 2rem;
 }
 
