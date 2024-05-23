@@ -19,16 +19,16 @@
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body>
-		<!-- <header class="header">
+		<header class="header">
 			<a href="#home">merry<span>Christmas</span></a>
-			<nav>
+			<nav class="navbar">
 				<a href="#home">home</a>
 				<a href="#about">about</a>
 				<a href="#products">products</a>
 				<a href="#services">services</a>
 				<a href="#gallery">gallery</a>
 				<a href="#contact">contact</a>
-				<a href="#blog">blog</a>
+				<a href="#blogs">blog</a>
 			</nav>
 			<div class="icons">
 				<div id="menu-btn" class="fas fa-bars"></div>
@@ -36,14 +36,37 @@
 				<a href="#" class="fas fa-heart"></a>
 				<a href="#" class="fas fa-shopping-cart"></a>
 			</div>
-		</header> -->
+			<form action="" class="search-form">
+				<input
+					type="search"
+					name=""
+					placeholder="search here..."
+					id="search-box"
+				/>
+				<label for="search-box" class="fas fa-search"></label>
+			</form>
+		</header>
+		<section class="home" id="home">
+			<div class="content">
+				<p>we wish you a</p>
+				<h1>merry christmas</h1>
+			</div>
+
+			<img src="images/trees.png" class="tree" alt="" />
+			<img src="images/mountains.png" class="mountain" alt="" />
+			<img src="images/moon.png" class="moon" alt="" />
+			<img src="images/cloud.png" class="cloud-1" alt="" />
+			<img src="images/cloud.png" class="cloud-2" alt="" />
+		</section>
 		<section class="about" id="about">
-			<h1 class="heading">about <span>us</span></h1>
+			<h1 class="heading" data-aos="fade-down" data-aos-delay="150">
+				about <span>us</span>
+			</h1>
 			<div class="container">
-				<div class="left-about">
+				<div class="left-about" data-aos="fade-right" data-aos-delay="200">
 					<img src="./images/about-img.png" alt="otaku-img" />
 				</div>
-				<div class="right-about">
+				<div class="right-about" data-aos="fade-left" data-aos-delay="300">
 					<h2>why choose us?</h2>
 					<h3>Celebrate Your Christmas With Us</h3>
 					<p>
@@ -57,9 +80,11 @@
 			</div>
 		</section>
 		<section class="products" id="products">
-			<h1 class="heading">our <span>products</span></h1>
+			<h1 class="heading" data-aos="fade-down" data-aos-delay="150">
+				our <span>products</span>
+			</h1>
 			<div class="container">
-				<div>
+				<div data-aos="fade-up" data-aos-delay="200">
 					<div class="product-img">
 						<img src="./images/product-1.png" alt="" />
 						<div class="reference">
@@ -78,7 +103,7 @@
 					<h2>christmas decor</h2>
 					<p>$29.99 <span>$39.99</span></p>
 				</div>
-				<div>
+				<div data-aos="fade-up" data-aos-delay="250">
 					<div class="product-img">
 						<img src="./images/product-2.png" alt="" />
 						<div class="reference">
@@ -97,7 +122,7 @@
 					<h2>christmas decor</h2>
 					<p>$29.99 <span>$39.99</span></p>
 				</div>
-				<div>
+				<div data-aos="fade-up" data-aos-delay="300">
 					<div class="product-img">
 						<img src="./images/product-3.png" alt="" />
 						<div class="reference">
@@ -116,7 +141,7 @@
 					<h2>christmas decor</h2>
 					<p>$29.99 <span>$39.99</span></p>
 				</div>
-				<div>
+				<div data-aos="fade-up" data-aos-delay="350">
 					<div class="product-img">
 						<img src="./images/product-4.png" alt="" />
 						<div class="reference">
@@ -135,7 +160,7 @@
 					<h2>christmas decor</h2>
 					<p>$29.99 <span>$39.99</span></p>
 				</div>
-				<div>
+				<div data-aos="fade-up" data-aos-delay="400">
 					<div class="product-img">
 						<img src="./images/product-5.png" alt="" />
 						<div class="reference">
@@ -154,7 +179,7 @@
 					<h2>christmas decor</h2>
 					<p>$29.99 <span>$39.99</span></p>
 				</div>
-				<div>
+				<div data-aos="fade-up" data-aos-delay="450">
 					<div class="product-img">
 						<img src="./images/product-6.png" alt="" />
 						<div class="reference">
@@ -176,9 +201,11 @@
 			</div>
 		</section>
 		<section class="services" id="services">
-			<h1 class="heading">our <span>services</span></h1>
+			<h1 class="heading" data-aos="fade-down" data-aos-delay="150">
+				our <span>services</span>
+			</h1>
 			<div class="container">
-				<div>
+				<div data-aos="fade-up" data-aos-delay="200">
 					<i class="fas fa-tree"></i>
 					<h2>christmas tree</h2>
 					<p>
@@ -187,7 +214,7 @@
 					</p>
 				</div>
 
-				<div>
+				<div data-aos="fade-up" data-aos-delay="300">
 					<i class="fas fa-cookie"></i>
 					<h2>christmas cookies</h2>
 					<p>
@@ -196,7 +223,7 @@
 					</p>
 				</div>
 
-				<div>
+				<div data-aos="fade-up" data-aos-delay="400">
 					<i class="fas fa-snowman"></i>
 					<h2>christmas snowman</h2>
 					<p>
@@ -205,7 +232,7 @@
 					</p>
 				</div>
 
-				<div>
+				<div data-aos="fade-up" data-aos-delay="500">
 					<i class="fas fa-gifts"></i>
 					<h2>christmas gifts</h2>
 					<p>
@@ -214,7 +241,7 @@
 					</p>
 				</div>
 
-				<div>
+				<div data-aos="fade-up" data-aos-delay="600">
 					<i class="fas fa-candy-cane"></i>
 					<h2>christmas candy</h2>
 					<p>
@@ -223,7 +250,7 @@
 					</p>
 				</div>
 
-				<div>
+				<div data-aos="fade-up" data-aos-delay="700">
 					<i class="fas fa-sleigh"></i>
 					<h2>christmas sleigh</h2>
 					<p>
@@ -234,39 +261,91 @@
 			</div>
 		</section>
 		<section class="gallery" id="gallery">
-			<h1 class="heading">our <span>gallery</span></h1>
+			<h1 class="heading" data-aos="fade-down" data-aos-delay="150">
+				our <span>gallery</span>
+			</h1>
 			<div class="container">
-				<div><img src="images/g-img-1.jpg" alt="" /></div>
-				<div><img src="images/g-img-2.jpg" alt="" /></div>
-				<div><img src="images/g-img-3.jpg" alt="" /></div>
-				<div><img src="images/g-img-4.jpg" alt="" /></div>
-				<div><img src="images/g-img-5.jpg" alt="" /></div>
-				<div><img src="images/g-img-6.jpg" alt="" /></div>
-				<div><img src="images/g-img-7.jpg" alt="" /></div>
-				<div><img src="images/g-img-8.jpg" alt="" /></div>
-				<div><img src="images/g-img-9.jpg" alt="" /></div>
+				<div data-aos="zoom-in" data-aos-delay="150">
+					<img src="images/g-img-1.jpg" alt="" />
+				</div>
+				<div data-aos="zoom-in" data-aos-delay="300">
+					<img src="images/g-img-2.jpg" alt="" />
+				</div>
+				<div data-aos="zoom-in" data-aos-delay="450">
+					<img src="images/g-img-3.jpg" alt="" />
+				</div>
+				<div data-aos="zoom-in" data-aos-delay="600">
+					<img src="images/g-img-4.jpg" alt="" />
+				</div>
+				<div data-aos="zoom-in" data-aos-delay="750">
+					<img src="images/g-img-5.jpg" alt="" />
+				</div>
+				<div data-aos="zoom-in" data-aos-delay="900">
+					<img src="images/g-img-6.jpg" alt="" />
+				</div>
+				<div data-aos="zoom-in" data-aos-delay="1050">
+					<img src="images/g-img-7.jpg" alt="" />
+				</div>
+				<div data-aos="zoom-in" data-aos-delay="1200">
+					<img src="images/g-img-8.jpg" alt="" />
+				</div>
+				<div data-aos="zoom-in" data-aos-delay="1350">
+					<img src="images/g-img-9.jpg" alt="" />
+				</div>
 			</div>
 		</section>
 		<section class="contact" id="contact">
-			<h1 class="heading">Contact <span>us</span></h1>
+			<h1 class="heading" data-aos="fade-down" data-aos-delay="150">
+				Contact <span>us</span>
+			</h1>
 			<form action="">
-				<input type="text" name="full-name" id="" placeholder="fullname" />
-				<input type="email" name="email" id="" placeholder="email" />
-				<input type="number" name="phone" id="" placeholder="phone" />
+				<input
+					data-aos="fade-up"
+					data-aos-delay="200"
+					type="text"
+					name="full-name"
+					id=""
+					placeholder="fullname"
+				/>
+				<input
+					data-aos="fade-up"
+					data-aos-delay="300"
+					type="email"
+					name="email"
+					id=""
+					placeholder="email"
+				/>
+				<input
+					data-aos="fade-up"
+					data-aos-delay="400"
+					type="number"
+					name="phone"
+					id=""
+					placeholder="phone"
+				/>
 				<textarea
+					data-aos="fade-up"
+					data-aos-delay="500"
 					name="message"
 					id=""
 					cols="30"
 					rows="10"
 					placeholder="message"
 				></textarea>
-				<input type="submit" value="send now" />
+				<input
+					data-aos="fade-up"
+					data-aos-delay="600"
+					type="submit"
+					value="send now"
+				/>
 			</form>
 		</section>
 		<section class="blogs" id="blogs">
-			<h1 class="heading">our <span>blogs</span></h1>
+			<h1 class="heading" data-aos="fade-down" data-aos-delay="150">
+				our <span>blogs</span>
+			</h1>
 			<div class="container">
-				<div>
+				<div data-aos="fade-up" data-aos-delay="200">
 					<div class="image">
 						<img src="./images/blog-1.jpg" alt="girl-noel" />
 					</div>
@@ -283,7 +362,7 @@
 						<a href="#"> <i class="fas fa-user"></i> by admin </a>
 					</div>
 				</div>
-				<div>
+				<div data-aos="fade-up" data-aos-delay="300">
 					<div class="image">
 						<img src="./images/blog-2.jpg" alt="girl-noel" />
 					</div>
@@ -300,7 +379,7 @@
 						<a href="#"> <i class="fas fa-user"></i> by admin </a>
 					</div>
 				</div>
-				<div>
+				<div data-aos="fade-up" data-aos-delay="400">
 					<div class="image">
 						<img src="./images/blog-3.jpg" alt="girl-noel" />
 					</div>
@@ -321,7 +400,7 @@
 		</section>
 		<footer>
 			<div class="container">
-				<div class="quick-links">
+				<div class="quick-links" data-aos="fade-up" data-aos-delay="150">
 					<h1>quick links</h1>
 					<div>
 						<i class="fas fa-angle-right"></i>
@@ -352,7 +431,7 @@
 						<a href="#blogs"> blogs</a>
 					</div>
 				</div>
-				<div class="extra-links">
+				<div class="extra-links" data-aos="fade-up" data-aos-delay="300">
 					<h1>extra links</h1>
 					<div>
 						<i class="fas fa-angle-right"></i>
@@ -374,7 +453,7 @@
 						<a href="#"> privace policy</a>
 					</div>
 				</div>
-				<div class="contact-info">
+				<div class="contact-info" data-aos="fade-up" data-aos-delay="450">
 					<h1>contact info</h1>
 					<div>
 						<i class="fas fa-phone"></i>
@@ -397,7 +476,7 @@
 						<a class="link" href="#"> Sénegal</a>
 					</div>
 				</div>
-				<div class="newsletter">
+				<div class="newsletter" data-aos="fade-up" data-aos-delay="700">
 					<h1>newsletter</h1>
 					<form action="">
 						<input
@@ -416,10 +495,17 @@
 					</div>
 				</div>
 			</div>
-			<p>
+			<p data-aos="fade-up" data-aos-delay="850">
 				Created by <span>genesis</span> inspired by <span>Coding Team</span> |
 				All Rights Reserved!
 			</p>
 		</footer>
+		<script src="./js/script.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+		<script>
+			AOS.init({
+				duration: 800,
+			});
+		</script>
 	</body>
 </html>
